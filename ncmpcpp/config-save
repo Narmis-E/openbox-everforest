@@ -1,0 +1,94 @@
+##############################################################
+## This is an example configuration file. Copy it to        ##
+## $XDG_CONFIG_HOME/ncmpcpp/config or $HOME/.ncmpcpp/config ##
+## and set up your preferences.                             ##
+##############################################################
+#
+##### directories ######
+##
+## Directory for storing ncmpcpp related files.  Changing it is useful if you
+## want to store everything somewhere else and provide command line setting for
+## alternative location to config file which defines that while launching
+## ncmpcpp.
+##
+#
+ncmpcpp_directory = ~/.config/ncmpcpp
+#
+##
+## Directory for storing downloaded lyrics. It defaults to ~/.lyrics since other
+## MPD clients (eg. ncmpc) also use that location.
+##
+#
+lyrics_directory = ~/.lyrics
+#
+##### connection settings #####
+#
+mpd_host = localhost
+#
+mpd_port = 6600
+#
+mpd_connection_timeout = 5
+#
+## Needed for tag editor and file operations to work.
+##
+mpd_music_dir = ~/Music
+#
+mpd_crossfade_time = 5
+#
+# GENERAL
+# ---
+connected_message_on_startup = "yes"
+cyclic_scrolling = "yes"
+mouse_support = "yes"
+mouse_list_scroll_whole_page = "yes"
+lines_scrolled = "1"
+message_delay_time = "1"
+playlist_shorten_total_times = "yes"
+playlist_display_mode = "columns"
+browser_display_mode = "columns"
+search_engine_display_mode = "columns"
+playlist_editor_display_mode = "columns"
+autocenter_mode = "yes"
+centered_cursor = "yes"
+user_interface = "classic"
+follow_now_playing_lyrics = "yes"
+locked_screen_width_part = "50"
+ask_for_locked_screen_width_part = "yes"
+display_bitrate = "no"
+external_editor = "nano"
+main_window_color = "default"
+startup_screen = "playlist"
+
+# PROGRESS BAR
+# ---
+progressbar_look = "━━━"
+#progressbar_look = "▃▃▃"
+progressbar_elapsed_color = "yellow"
+progressbar_color = "black"
+
+# UI VISIBILITY
+# ---
+header_visibility = "no"
+statusbar_visibility = "yes"
+titles_visibility = "yes"
+enable_window_title = "yes"
+
+# COLORS
+# ---
+statusbar_color = "white"
+color1 = "white"
+color2 = "blue"
+
+# UI APPEARANCE
+# ---
+now_playing_prefix = "$b$2�$7 "
+now_playing_suffix = "  $/b$8"
+current_item_prefix = "$b$7�$/b$3 "
+current_item_suffix = "  $8"
+
+song_columns_list_format = "(50)[]{t|fr:Title} (0)[magenta]{a}"
+song_list_format = " {%t $R   $8%a$8}|{%f $R   $8%l$8} $8"
+song_status_format = "{$b$6�$8 %t }$6"
+song_window_title_format = "Now Playing .."
+
+#execute_on_song_change = ncmpcpp_notify.sh
