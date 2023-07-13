@@ -1,4 +1,4 @@
-# openbox-everforest
+# openbox-everforest [![awesome-rice-badge](https://raw.githubusercontent.com/zemmsoares/awesome-rices/main/assets/awesome-rice-badge.svg)](https://github.com/zemmsoares/awesome-rices)
 An everforest rice for openbox (old) \
 My first bar-less rice (using dunst and scripts for that stuff instead)
 
